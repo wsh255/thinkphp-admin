@@ -11,7 +11,7 @@
     "后台",
     "后台构建"
   ],
-  "homepage": "https://sonata-project.org/bundles/admin",
+  "homepage": "https://github.com/wsh255/thinkphp-admin.git",
   "license": "MIT",
   "minimum-stability": "dev",
   "authors": [
