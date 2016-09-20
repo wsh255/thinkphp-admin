@@ -1,0 +1,27 @@
+{
+  "name": "wsh255/thinkphp-admin",
+  "description": "基于ThinkPhp 5.0 快速构建后台",
+  "type": "thinkphp-extend",
+  "keywords": [
+    "thinkphp",
+    "thinkphp-admin",
+    "Admin Generator",
+    "admin",
+    "bootstrap",
+    "后台",
+    "后台构建"
+  ],
+  "homepage": "https://sonata-project.org/bundles/admin",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "wsh",
+      "email": "wsh255@qq.com",
+      "homepage": "https://github.com/wsh255/thinkphp-admin.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
