@@ -19,8 +19,10 @@
       "email": "wsh255@qq.com"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "wsh255/thinkphp-admin": "dev-master"
   },
   "autoload": {
     "psr-4": {
