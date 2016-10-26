@@ -15,7 +15,7 @@
 
 ##列表
     
-#####使用方法
+#####创建控制器
     //{dir}\application\admin\controller\User.php
     <?php
     
@@ -31,10 +31,10 @@
        {
             $lists
                 ->add('id',null,['label'=>'ID'])
-                ->add('username',null,['label'=>'账号','template'=>'user/username'])
+                ->add('username',null,['label'=>'账号'])
                 ->add('email')
                 ->add('_actions','action',[
-                    'edit' => ['label' => '编辑','template'=>'user/edit'],
+                    'edit' => ['label' => '编辑'],
                     'read' => ['label' => '查看'],
                     'delete' => ['label' => '删除'],
                 ])
@@ -44,13 +44,46 @@
     }
 
 #####说明    
-    1.type: mysql字段类型
+1.type: mysql字段类型
+
+    ->add('id',type,['label'=>'ID'])
+                
+2.字段使用自定义模板
+
+    ->add('username',null,['label'=>'账号','template'=>'user/username'])
+    模板自定义后，不支持think模板语法，即使用PHP 原生语法输出变量, 例如: <?php echo $item['username']; ?> 输出用户的账号
         
-    2.字段使用自定义模板后，不支持think模板语法，即使用PHP 原生语法输出变量, 例如: <?php echo $item['username']; ?> 输出用户的账号
+3. 自定义操作
+
+             ->add('_actions','action',[
+                'edit' => ['label' => '编辑'],
+                'read' => ['label' => '查看'],
+                'delete' => ['label' => '删除'],
+            ])
+
+#####创建模型
+        //{dir}\application\common\model\User.php
+        <?php
         
-    3. 自定义操作
-         ->add('_actions','action',[
-            'edit' => ['label' => '编辑'],
-            'read' => ['label' => '查看'],
-            'delete' => ['label' => '删除'],
-        ])
+        namespace app\common\model;
+        
+        use think\Model;
+        
+        class User extends Model
+        {
+            //
+        }
+#####配置数据库
+    {dir}\application\config.php
+    修改对应的配置文件
+    
+#####复制静态文件
+    
+    cp -rf vendor/wsh255/thinkphp-admin/thinkphp-admin/ public/static/thinkphp-admin/ 
+
+创建好数据库打开 
+    
+    http://localhost:8080/admin/user
+
+您将看到如下
+![image](http://o700r2wvv.bkt.clouddn.com/list.png)

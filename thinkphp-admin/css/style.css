@@ -1,0 +1,33 @@
+
+.body-left {
+    background-color: #2E2E2E;
+    color: #9d9d9d;
+}
+
+.breadcrumb .actions {
+    width: 200px;
+    text-align: right;
+}
+
+.breadcrumb .actions:before {
+    content: ''
+}
+
+.filter {
+    display: none;
+}
+
+.not-found {
+    text-align: center;
+    color: #777;
+}
+
+.not-found .code {
+    font-size: 120px;
+}
+.not-found .msg {
+    font-size: 40px;
+}
+.not-found .link{
+
+}
