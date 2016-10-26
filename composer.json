@@ -13,7 +13,7 @@
   ],
   "homepage": "https://sonata-project.org/bundles/admin",
   "license": "MIT",
-  "minimum-stability": "dev-master",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "wsh",
