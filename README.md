@@ -86,4 +86,4 @@
     http://localhost:8080/admin/user
 
 您将看到如下
-![image](http://o700r2wvv.bkt.clouddn.com/list.png)
+![列表图片](https://github.com/wsh255/thinkphp-admin/raw/master/image/list.png)
