@@ -11,7 +11,7 @@
     "后台",
     "后台构建"
   ],
-  "homepage": "https://github.com/wsh255/thinkphp-admin.git",
+  "homepage": "https://sonata-project.org/bundles/admin",
   "license": "MIT",
   "minimum-stability": "dev",
   "authors": [
@@ -26,7 +26,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ThinkPhpAdmin": "src/"
+      "think\\admin\\": "src"
     }
   }
 }

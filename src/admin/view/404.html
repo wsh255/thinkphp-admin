@@ -1,0 +1,13 @@
+{extend name="$layout_path" }
+
+{block name="body"}
+<div class="not-found">
+    <p class="code">404</p>
+    <p class="msg">您访问的页面不存在</p>
+    <p class="link">
+        <a class="btn btn-link btn-lg" href="{$history_url}">返回上一页</a>
+        <a class="btn btn-link btn-lg" href="/">去首页</a>
+    </p>
+
+</div>
+{/block}
