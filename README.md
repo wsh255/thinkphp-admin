@@ -3,7 +3,8 @@
 
 ##安装方法：
    
-    composer require wsh255/thinkphp-admin
+    composer require wsh255/thinkphp-admin dev-master
+
 
 
 
