@@ -52,14 +52,16 @@
 
     ->add('username',null,['label'=>'账号','template'=>'user/username'])
     模板自定义后，不支持think模板语法，即使用PHP 原生语法输出变量, 例如: <?php echo $item['username']; ?> 输出用户的账号
-        
-3. 自定义操作
+            
+3.自定义操作
 
-             ->add('_actions','action',[
-                'edit' => ['label' => '编辑'],
-                'read' => ['label' => '查看'],
-                'delete' => ['label' => '删除'],
-            ])
+    ->add('_actions','action',[
+        'edit' => ['label' => '编辑'],
+        'read' => ['label' => '查看'],
+        'delete' => ['label' => '删除'],
+    ])
+    指定模板
+    'edit' => ['label' => '编辑','template'=>'user/edit']
 
 #####创建模型
         //{dir}\application\common\model\User.php
